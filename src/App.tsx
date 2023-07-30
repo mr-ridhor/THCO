@@ -1,11 +1,15 @@
 
+import { RouterProvider } from 'react-router-dom'
 import './App.css'
+import { routes } from './utils/routes'
 
 function App() {
-  // const [count, setCount] = useState(0)
+ 
 
   return (
-   <div className="bg-red-500 h-screen w-screen">djhd</div>
+   <div className=" ">
+    <RouterProvider router={routes}/>
+   </div>
   )
 }
 
