@@ -10,7 +10,7 @@ const LeftPane = () => {
     console.log(location.pathname)
   const tabs = [
     { label: "Dashboard", link: "/", icons: <MdIcons.MdOutlineDashboard /> },
-    { label: "Orders", link: "/orders", icons: <BsIcons.BsBag /> },
+    { label: "Orders", link: "/orders", icons: <BsIcons.BsBag /> , badge:3},
     {
       label: "Customers",
       link: "/customers",
@@ -21,6 +21,7 @@ const LeftPane = () => {
       label: "Conversation",
       link: "/message",
       icons: <FaIcons.FaRegCommentDots />,
+      badge:16
     },
     { label: "Settings", link: "/settings", icons: <FiIcons.FiSettings /> },
     // {label:"Contact Support", link:"/support",icons:<BsIcons.BsBag/>},
@@ -56,6 +57,12 @@ const LeftPane = () => {
               {" "}
                 {tab.label}{" "}
               </span>
+              {/* <span className="text-[8px] bg-[#FFCC91] rounded-full w-4 h-4 text-center p-[1px]">{tab.badge}</span> */}
+              {tab.badge && ( 
+              <span className="text-[8px] bg-[#FFCC91] rounded-full w-4 h-4 text-center p-[1px]">
+                {tab.badge}
+              </span>
+            )}
             </NavLink>
           );
         })}
