@@ -38,12 +38,12 @@ const Navbar = () => {
   }, [pathname])
   return (
     <div className=''>
-        <nav className={` w-full h-14 2xl:h-20   relative shadow-lg bg-white `}>
+        <nav className={` w-full h-14 xl:h-20   relative shadow-lg bg-white `}>
        <div className="px-2 w-full flex items-center h-10 gap-1">
        <span className=' text-md text-[#45464E] h-full flex items-center'>{navbarText}</span>
        <div className='flex-grow justify-end flex w-full items-center h-full gap-2'>
-        <div className="flex items-center bg-[#FEF5EA] py-1 px-2 rounded-md text-[#1C1D22]">
-          <span className='text-sm'>Nanny's Shop</span>
+        <div className=" md:flex hidden items-center bg-[#FEF5EA] py-1 md:px-2 gap-0 md:gap-2 rounded-md text-[#1C1D22]">
+          <span className='text-sm  '>Nanny's Shop</span>
           <MdKeyboardArrowDown/>
         </div>
         <BiSolidBell className="text-[#5570F1]"/>

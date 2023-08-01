@@ -4,11 +4,14 @@ import LeftPane from './LeftPane'
 
 const Sidebar = ({children}: {children: React.ReactNode}) => {
   return (
-    <div className='w-full  h-screen flex'>
+    <div className='w-full  h-screen flex bg-yel  low-300'>
         <LeftPane/>
-        <main className="bg-yellow-500 w-full">
+        <main className="h-full bg-[#F4F5FA] w-full">
         <Navbar/>
-        {children}
+        <div className="h-[calc(100vh-56px)] xl:h-[calc(100vh-80px)]  ">
+          {children}
+        </div>
+        {/* {children} */}
 
         </main>
     </div>

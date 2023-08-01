@@ -2,6 +2,7 @@
 import { RouterProvider } from 'react-router-dom'
 import './App.css'
 import { routes } from './utils/routes'
+// import 'react-apexcharts/dist/react-apexcharts.css'; 
 
 function App() {
  
